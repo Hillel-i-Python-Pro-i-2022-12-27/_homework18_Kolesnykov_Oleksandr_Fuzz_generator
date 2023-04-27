@@ -14,7 +14,7 @@ def get_data():
     else:
         word_length = int(word_length)
 
-    start_word = input("Введите номер слова, с которого начнём старт или нажмите Enter что бы пропустить: ")
+    start_word = input("Введите номер слова, с которого начнём старт или нажмите Enter что бы начать с начала: ")
     if start_word.isdigit():
         start_word = int(start_word)
     else:
