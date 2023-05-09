@@ -17,3 +17,5 @@ autoflake==2.0.0
 
 # [code_style]-[END]
 
+# import .env configs
+python-dotenv

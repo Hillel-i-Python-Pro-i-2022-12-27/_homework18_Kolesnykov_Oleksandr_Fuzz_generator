@@ -37,7 +37,13 @@ migrate:
 .PHONY: d-homework-i-run
 # Make all actions needed for run homework from zero.
 d-homework-i-run:
+	@make init-config-i-homework && \
 	make d-run
+
+PHONY: init-config-i-homework
+# Init configs for homework
+init-config-i-homework:
+	@cp .env.homework .env
 
 .PHONY: d-homework-i-purge
 # Make all actions needed for purge homework related data.
